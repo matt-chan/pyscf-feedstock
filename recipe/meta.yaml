@@ -24,18 +24,18 @@ requirements:
     - cmake >=3.10
   host:
     - libblas
-    - libcint 4.4.6
-    - libxc 5.1.7
+    - libcint 
+    - libxc >=6
     - llvm-openmp
     - make
     - pip
     - python
     - xcfun 2.1.1
   run:
-    - h5py >=2.7
-    - numpy >=1.13,!=1.16,!=1.17
+    - h5py 
+    - numpy 
     - python
-    - scipy <=1.1.0,!=1.5.0,!=1.5
+    - scipy 
   run_constrained:
     - pyberny >=0.6.2
     - geometric >=0.9.7.2
@@ -54,9 +54,11 @@ test:
     - nose-exclude
     - nose-timer
     - pip
+    - pytest
   source_files:
     - .github/workflows/run_tests.sh
     - pyscf
+    - setup.cfg
 
 about:
   home: https://pyscf.org
